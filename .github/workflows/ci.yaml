@@ -1,4 +1,4 @@
-name: Deploy App to S3
+name: CI Deploy to S3
 
 on: [push]
 
@@ -11,11 +11,6 @@ jobs:
     - name: Lister les fichiers et dossiers
       run :  | #permet de séparer les commandes sur plusieurs lignes
         ls -la
-    - name: Créer un nouveau fichier
-      run :  | 
-        touch newfile.txt
-    - name: Lister à nouveau les fichiers et dossiers
-      run :  | 
-        ls -la
+    
 
     
