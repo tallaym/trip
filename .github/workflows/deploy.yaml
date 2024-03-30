@@ -8,12 +8,14 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
-    - name: List directory
+    - name: Lister les fichiers et dossiers
       run :  | #permet de séparer les commandes sur plusieurs lignes
         ls -la
     - name: Create new file
       run :  | 
         touch newfile.txt
-    - name: List directory again
+    - name: Lister à nouveau les fichiers et dossiers
       run :  | #permet de séparer les commandes sur plusieurs lignes
         ls -la
+
+    
