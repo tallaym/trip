@@ -5,9 +5,15 @@ on: [push]
 jobs:
   deployment:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    - name: List directory
-      run :  |
-        ls -la
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: List directory
+        run: | #permet de séparer les commandes sur plusieurs lignes
+          ls -la
+
+      - name: Create new file
+        run: |
+          touch newfile.txt
